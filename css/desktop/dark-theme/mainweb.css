@@ -29,15 +29,21 @@
 
 /* Recommended Slider */
 #mainweb-recom {
-    height: 300px;
+    height: 350px;
     border: 3px solid white;
     border-radius: 20px;
     margin-top: 30px;
 }
 
+#dev-choice-catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 /* Catalog Lists */
 #mainweb-catalogs {
-    height: 300px;
+    height: 800px;
     border: 3px solid white;
     border-radius: 20px;
     margin-top: 30px;
@@ -49,17 +55,23 @@
 
 #mainweb-randcatalog {
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 50%;
     float: left;
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: flex-start;
     overflow: hidden;
     overflow-y: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: 10px;
 }
 
 #mainweb-allcatalog {
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 50%;
     float: right;
     display: flex;
@@ -67,6 +79,14 @@
     align-items: center;
     overflow: hidden;
     overflow-y: auto;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#mainweb-allcatalog-content {
+    width: 100%;
 }
 
 /* Screen Resize */

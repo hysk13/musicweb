@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/desktop/dark-theme/left-nav.css" id="left-nav-bar-css">
     <link rel="stylesheet" href="css/desktop/dark-theme/mainweb.css" id="main-web-css">
     <link rel="stylesheet" href="css/desktop/dark-theme/playing.css" id="playing-bar-css">
+    <link rel="stylesheet" href="css/desktop/music-card.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -20,16 +21,12 @@
                 <button><i class="fa fa-home"><p>&nbsp;Home</p></i></button>
                 <button><i class="fa fa-search"><p>&nbsp;Search</p></i></button>
             </div>
-            <div class="wrapper" id="left-nav-history">
-                <i class="fa fa-bookmark"><p>&nbsp;Music History</p></i>
-                <div class="wrapper" id="left-nav-history-catalog"></div>
-            </div>
             <div class="wrapper" id="left-nav-pagectrl">
                 <div class="wrapper" id="left-nav-pagectrl-setting">
                     <button><i class="fa fa-moon-o"></i></button>
                     <div class="wrapper" id="left-nav-pagectrl-setting-volume">
                         <i class="fa fa-volume-up"></i>
-                        <input type="range" value="100">
+                        <input type="range" value="100" id="volume-slide">
                     </div>
                 </div>
                 <div class="wrapper" id="left-nav-credits">
@@ -52,18 +49,47 @@
             <div class="wrapper" id="mainweb-catalogs">
                 <div class="wrapper" id="mainweb-randcatalog">
                     <p id="mainweb-title">~ Random Tracks ~</p>
+                    <div class="wrapper" id="mainweb-randcatalog-content">
+                        <p>Placeholder</p>
+                    </div>
                 </div>
                 <div class="wrapper" id="mainweb-allcatalog">
                     <p id="mainweb-title">~ All Tracks ~</p>
+                    <div class="wrapper" id="mainweb-allcatalog-content">
+                        <p>Placeholder</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="wrapper" id="play-bar">
             <p id="play-bar-txt">Nothing Is Playing!</p>
+            <div id="real-playbar">
+                <img src="https://www.davidhechler.com/wp-content/uploads/2016/07/500x500-dummy-image.jpg" alt="Thumbnail" id="players-img">
+                <div class="wrapper" id="playbar-text-wrap">
+                    <p id="playing-title">{Song Title}</p>
+                    <p id="playing-by">{Sang By}</p>
+                </div>
+                <div class="wrapper" id="controls-wrap">
+                    <div class="wrapper" id="contrls-btn">
+                        <button id="ctrl-back"><i class="fa fa-backward"></i></button>
+                        <button id="ctrl-play"><i class="fa fa-play"></i></button>
+                        <button id="ctrl-loop"><i class="fa fa-refresh"></i></button>
+                        <button id="ctrl-next"><i class="fa fa-forward"></i></button>
+                    </div>
+                    <div class="wrapper progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
+    <div class="audio-track" id="player"></div>
+
 </body>
+<script src="./js/data.js"></script>
+<script src="./js/render.js"></script>
+<script src="./js/video.js"></script>
 </html>

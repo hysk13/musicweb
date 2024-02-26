@@ -1,0 +1,57 @@
+.sqrCardWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.horCardWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.cardThumb {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.cardTextWrap {
+    padding: 10px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 180px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cardTitle {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+}
+
+.cardBy {
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+}

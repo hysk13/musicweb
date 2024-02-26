@@ -44,6 +44,7 @@
 
 /* Top Buttons Panel */
 #left-nav-btns {
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,46 +69,9 @@
     margin-bottom: 10px;
 }
 
-/* History Panel */
-#left-nav-history {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    border: 3px solid white;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
-#left-nav-history i {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
-    overflow-x: auto;
-}
-
-#left-nav-history p i {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 20px;
-}
-
-#left-nav-history-catalog {
-    height: 333px;
-    border: 3px solid white;
-    margin: 10px;
-    border-radius: 20px;
-}
-
 /* Page Control */
 #left-nav-pagectrl {
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
