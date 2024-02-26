@@ -173,6 +173,23 @@
     margin-right: -5px;
 }
 
+/* Version */
+#version-wrap {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#version-wrap p {
+    font-family: verdana, sans-serif;
+}
+
+#version-wrap a {
+    color: white;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 750px) {
     #left-nav {
         display: none;
