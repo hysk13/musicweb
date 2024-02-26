@@ -97,3 +97,9 @@
         margin: 0;
     }
 }
+
+@media screen and (max-width: 550px) {
+    #main-web {
+        height: 60%;
+    }
+}

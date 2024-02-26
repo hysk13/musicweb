@@ -7,6 +7,9 @@
     border-radius: 20px;
     width: 250px;
     height: 250px;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .horCardWrap {
@@ -17,6 +20,9 @@
     border: 3px solid white;
     border-radius: 20px;
     margin: 20px;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .cardThumb {
@@ -44,6 +50,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .cardTitle {
