@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="full" id="html" style="background-color: black;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/desktop/dark-theme/left-nav.css" id="left-nav-bar-css">
+    <link rel="stylesheet" href="css/desktop/dark-theme/mainweb.css" id="main-web-css">
+    <link rel="stylesheet" href="css/desktop/dark-theme/playing.css" id="playing-bar-css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body class="full">
+    
+    <div class="wrapper" id="main" style="height: 100%;">
+        
+        <div class="wrapper" id="left-nav" style="height: 95%;">
+            <div class="wrapper" id="left-nav-btns">
+                <button><i class="fa fa-home"><p>&nbsp;Home</p></i></button>
+                <button><i class="fa fa-search"><p>&nbsp;Search</p></i></button>
+            </div>
+            <div class="wrapper" id="left-nav-history">
+                <i class="fa fa-bookmark"><p>&nbsp;Music History</p></i>
+                <div class="wrapper" id="left-nav-history-catalog"></div>
+            </div>
+            <div class="wrapper" id="left-nav-pagectrl">
+                <div class="wrapper" id="left-nav-pagectrl-setting">
+                    <button><i class="fa fa-moon-o"></i></button>
+                    <div class="wrapper" id="left-nav-pagectrl-setting-volume">
+                        <i class="fa fa-volume-up"></i>
+                        <input type="range" value="100">
+                    </div>
+                </div>
+                <div class="wrapper" id="left-nav-credits">
+                    <a href="https://github.com/hysk13" target="_blank" class="nav-link-invis" id="left-nav-credits-by">@hysk13</a>
+                    <a href="https://github.com/hysk13/musicweb" target="_blank" class="nav-link-btn" id="left-nav-srccode"><i class="fa fa-code"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper" id="main-web">
+            <div class="wrapper" id="mainweb-topbar">
+                <p id="mainweb-title">Welcome to My Music Playlist (musicweb)</p>
+            </div>
+            <div class="wrapper" id="mainweb-recom">
+                <p id="mainweb-title">Even Developers Are Listening!!</p>
+                <div class="wrapper" id="dev-choice-catalog">
+                    <!-- Create 3 Music Playlist Thumbs in JS -->
+                </div>
+            </div>
+            <div class="wrapper" id="mainweb-catalogs">
+                <div class="wrapper" id="mainweb-randcatalog">
+                    <p id="mainweb-title">~ Random Tracks ~</p>
+                </div>
+                <div class="wrapper" id="mainweb-allcatalog">
+                    <p id="mainweb-title">~ All Tracks ~</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper" id="play-bar">
+            <p id="play-bar-txt">Nothing Is Playing!</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
