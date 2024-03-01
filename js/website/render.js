@@ -26,7 +26,7 @@ function RenderCatalog() {
     let columns = [];
     allCatalog.innerHTML = '';
     for (let i = 0; i < 3; i++) {
-        const regulation = [400, 900, 1330]
+        const regulation = [200, 900, 1330]
         const blueprint = {
             0 : ['catalog-col', 'col-one'],
             1 : ['catalog-col', 'col-two'],

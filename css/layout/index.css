@@ -49,3 +49,24 @@
 .cardBy {
     font-size: 12px;
 }
+
+@media screen and (max-width: 350px) {
+    .cardWrap {
+        width: 200px;
+        height: 200px;
+    }
+    .cardThumb {
+        width: 75px;
+        height: 75px;
+    }
+    .cardTextWrap {
+        width: 120px;
+        height: 55px;
+    }
+    .cardTitle {
+        font-size: 8px;
+    }
+    .cardBy {
+        font-size: 6px;
+    }
+}

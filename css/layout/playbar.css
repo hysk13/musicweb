@@ -136,3 +136,9 @@
         width: 60%;
     }
 }
+
+@media screen and (max-width: 300px) {
+    .progress-bar {
+        width: 45%;
+    }
+}
