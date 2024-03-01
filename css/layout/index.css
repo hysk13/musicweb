@@ -1,0 +1,51 @@
+.cardWrap {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--card-gradient-color);
+    border: 3px solid var(--card-border-color);
+    border-radius: 20px;
+    margin: 20px 0;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.cardThumb {
+    width: 100px;
+    height: 100px;
+    margin: 10px, 0;
+    border: 2px solid var(--card-border-color);
+    border-radius: 20px;
+}
+
+.cardTextWrap {
+    width: 180px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--card-background-color);
+    border: 1.5px solid var(--card-border-color);
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 10px;
+    font-family: Verdana, sans-serif;
+    color: var(--card-color);
+    text-align: center;
+    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.cardTitle {
+    font-size: 14px;
+    color: var(--card-color);
+}
+
+.cardBy {
+    font-size: 12px;
+}

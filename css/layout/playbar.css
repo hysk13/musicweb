@@ -1,71 +1,68 @@
 #play-bar {
-    border: 3px solid white;
-    border-radius: 20px;
-    background-color: black;
     width: 70%;
     height: 100px;
-    margin-left: -10px;
     position: fixed;
-    bottom: 6.25%;
     right: 45px;
-    overflow: hidden;
-    overflow-x: auto;
+    bottom: 6.25%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: var(--playbar-background-color);
+    border: 3px solid var(--playbar-border-color);
+    border-radius: 20px;
+    margin-left: -10px;
+    overflow: hidden;
 }
 
 #play-bar-txt {
     display: none;
-    font-size: 20px;
-    color: white;
     font-family: Verdana, sans-serif;
+    font-size: 20px;
+    color: var(--playbar-color);
     text-align: center;
 }
 
 #real-playbar {
-    margin-left: 10%;
     width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 10%;
 }
 
 #real-playbar img {
-    border: 2px solid white;
-    border-radius: 20px;
     width: 75px;
     height: 75px;
+    border: 2px solid var(--playbar-border-color);
+    border-radius: 20px;
     margin: 20px;
 }
 
 #playbar-text-wrap {
     width: 200px;
     height: 75px;
-    margin: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+    font-family: Verdana, sans-serif;
+    color: var(--playbar-color);
     text-align: center;
-    color: white;
-    font-size: 18px;
-    font-family: verdana, sans-serif;
 }
 
 #playbar-text-wrap p {
     display: flex;
     flex-direction: column;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
 
 #controls-wrap {
-    display: flex;
     width: 500px;
     height: 75px;
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -79,36 +76,63 @@
     align-items: center;
 }
 
-#controls-wrap button {
+#contrls-btn button {
     width: 40px;
     height: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: white;
     background: transparent;
     border: none;
+    margin: 0 10px;
     font-size: 25px;
+    color: var(--playbar-color);
 }
 
 .progress-bar {
     width: 80%;
     height: 7px;
     background-color: rgba(214, 214, 214, 0.525);
-    margin-bottom: 10px;
     border-radius: 10px;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .progress {
-    border-radius: 10px;
     width: 0;
     height: 100%;
-    background-color: white;
+    background-color: var(--progress-color);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+    #real-playbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+    #real-playbar img {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    #playbar-text-wrap {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    #controls-wrap {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 750px) {
     #play-bar {
         width: 90%;
-        right: 5% + 5px;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .progress-bar {
+        width: 60%;
     }
 }
