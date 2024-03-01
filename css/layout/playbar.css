@@ -141,4 +141,7 @@
     .progress-bar {
         width: 45%;
     }
+    #play-bar {
+        bottom: 4%;
+    }
 }

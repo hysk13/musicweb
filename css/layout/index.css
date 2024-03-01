@@ -37,8 +37,6 @@
     color: var(--card-color);
     text-align: center;
     overflow: hidden;
-    overflow-x: auto;
-    overflow-y: auto;
 }
 
 .cardTitle {
