@@ -20,7 +20,8 @@ function LoadAudio(id) {
 }
 
 function LoadPlayer(id) {
-    playerThumb.src = `https://img.youtube.com/vi/${musicData[id]['file']}/0.jpg`;
+    if (musicData[id]['thumb'] == undefined) playerThumb.src = `https://img.youtube.com/vi/${musicData[id]['file']}/0.jpg`;
+    else playerThumb.src = `https://img.youtube.com/vi/${musicData[id]['thumb']}/0.jpg`;
     playerTitle.textContent = musicData[id]['title'];
     playerBy.textContent = musicData[id]['by'];
     playerBy.style.color = musicData[id]['by-color'];
