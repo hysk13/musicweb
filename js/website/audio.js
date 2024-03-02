@@ -30,6 +30,7 @@ function onYouTubeIframeAPIReady() {
                         ctrlPlay.innerHTML = '<i class="fa fa-pause" />';
                         break;
                     case 2:
+                        window.close();
                         if (playing) ctrlPlay.innerHTML = '<i class="fa fa-play" />';
                         else player.playVideo();
                         break;
