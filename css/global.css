@@ -23,8 +23,13 @@
     text-decoration: none;
 }
 
-::-webkit-scrollbar, iframe {
+::-webkit-scrollbar {
     display: none;
+}
+
+iframe {
+    position: fixed;
+    top: 0;
 }
 
 @media screen and (max-width: 100px) {

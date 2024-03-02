@@ -89,7 +89,11 @@
     <script src="./js/website/audio.js"></script>
     <script src="./js/website/render.js"></script>
     <script src="./js/website/theme.js"></script>
-    <script src="./js/start.js"></script>
+    
+    <script>
+        window.onload = RenderCatalog;
+        window.onresize = RenderCatalog;
+    </script>
 
 </body>
 
