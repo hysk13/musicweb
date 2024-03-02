@@ -76,7 +76,7 @@
         background: transparent;
         border: none;
         font-family: Verdana, sans-serif;
-        color: white;
+        color: var(--main-color);
     }
 
     #search-wrap button i {
