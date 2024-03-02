@@ -1,5 +1,18 @@
 //control.js - a JavaScript file handling the control buttons of the website
 
+const ctrlBack = document.querySelector('#ctrl-back');
+const ctrlPlay = document.querySelector('#ctrl-play');
+const ctrlLoop = document.querySelector('#ctrl-loop');
+const ctrlNext = document.querySelector('#ctrl-next');
+
+const volumeSlide = document.querySelector('#volume-slide');
+const volumeButtonSmall = document.querySelector('#volume-btn-small');
+
+const easterEggButton = document.querySelector('#easter-egg');
+const easterTxt = document.querySelector('#easter-txt');
+
+let easter = 0;
+
 ctrlBack.onclick = function() {
     if (!first) {
         index--;
@@ -10,8 +23,8 @@ ctrlBack.onclick = function() {
 
 ctrlPlay.onclick = function() {
     if (!first) {
-        if (playing) PauseAudio();
-        else PlayAudio();
+        if (playing) player.pauseVideo();
+        else player.playVideo();
     }
 }
 
@@ -47,11 +60,11 @@ volumeButtonSmall.onclick = function() {
 easterEggButton.onclick = function() {
     easter++;
     switch (easter) {
-        case 100: alert('Why are you clicking this button');
-        case 1000: alert('You are insane.');
-        case 10000: alert("Ain't no way.");
-        case 100000: alert('Autoclicker?');
-        case 1000000: alert('Oh nah');
+        case 100: alert('Why are you clicking this button'); break;
+        case 1000: alert('You are insane.'); break;
+        case 10000: alert("Ain't no way."); break;
+        case 100000: alert('Autoclicker?'); break;
+        case 1000000: alert('Oh nah'); break;
     }
     easterTxt.textContent = easter;
 }

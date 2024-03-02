@@ -1,5 +1,13 @@
 // theme.js - a JavaScript file handling theme changes
 
+const theme = document.querySelector('#app-theme');
+const toggleTheme = document.querySelector('#toggle-theme');
+const toggleThemeSmall = document.querySelector('#toggle-theme-small');
+const html = document.querySelector('#html');
+const webWrap = document.querySelector('#website-wrap');
+
+let dark = true;
+
 toggleTheme.onclick = ChangeTheme;
 toggleThemeSmall.onclick = ChangeTheme;
 

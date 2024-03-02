@@ -31,8 +31,8 @@ iframe {
     visibility: hidden;
 }
 
-@media screen and (max-width: 100px) {
-    html {
+@media screen and (max-width: 222px) {
+    body {
         display: none;
     }
 }

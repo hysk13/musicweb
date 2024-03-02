@@ -1,5 +1,11 @@
 // render.js - a JavaScript file rendering the components
 
+const allCatalog = document.querySelector('#mainweb-allcatalog');
+const playBar = document.querySelector('#play-bar');
+const playerThumb = document.querySelector('#players-img');
+const playerTitle = document.querySelector('#playing-title');
+const playerBy = document.querySelector('#playing-by');
+
 function CreateCard(id) {
     const cardWrap = document.createElement('div');
     cardWrap.className = 'cardWrap';

@@ -1,5 +1,12 @@
 // manage.js - a JavaScript file managing the audios and user interactions
 
+let first = true;
+let loop = false;
+let loopID = 0;
+let playing = false;
+let index = 0;
+let volume = 0;
+
 function LoadAudio(id) {
     index = id;
     playing = true;

@@ -1,9 +1,6 @@
 #play-bar {
-    width: 70%;
+    width: 90%;
     height: 100px;
-    position: fixed;
-    right: 45px;
-    bottom: 6.25%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -11,7 +8,7 @@
     background-color: var(--playbar-background-color);
     border: 3px solid var(--playbar-border-color);
     border-radius: 20px;
-    margin-left: -10px;
+    margin-top: 20px;
     overflow: hidden;
 }
 
@@ -127,7 +124,6 @@
 @media screen and (max-width: 750px) {
     #play-bar {
         width: 90%;
-        right: 5%;
     }
 }
 
@@ -137,11 +133,17 @@
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 450px) {
     .progress-bar {
-        width: 45%;
+        width: 55%;
     }
     #play-bar {
-        bottom: 4%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .progress-bar {
+        width: 40%;
     }
 }

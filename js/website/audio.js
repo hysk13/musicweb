@@ -42,5 +42,4 @@ function onYouTubeIframeAPIReady() {
 
 document.addEventListener('visibilitychange', function() {
     if (playing) player.playVideo();
-    else player.pauseVideo();
 })

@@ -1,26 +1,5 @@
 // init.js - a wrapper JavaScript file containing constants.
 
-const allCatalog = document.querySelector('#mainweb-allcatalog');
-const playBar = document.querySelector('#play-bar');
-const playerThumb = document.querySelector('#players-img');
-const playerTitle = document.querySelector('#playing-title');
-const playerBy = document.querySelector('#playing-by');
-const progressBar = document.querySelector('.progress-bar');
-const progress = document.querySelector('.progress');
-const ctrlBack = document.querySelector('#ctrl-back');
-const ctrlPlay = document.querySelector('#ctrl-play');
-const ctrlLoop = document.querySelector('#ctrl-loop');
-const ctrlNext = document.querySelector('#ctrl-next');
-const volumeSlide = document.querySelector('#volume-slide');
-const volumeButtonSmall = document.querySelector('#volume-btn-small');
-const theme = document.querySelector('#app-theme');
-const toggleTheme = document.querySelector('#toggle-theme');
-const toggleThemeSmall = document.querySelector('#toggle-theme-small');
-const html = document.querySelector('#html');
-const webWrap = document.querySelector('#website-wrap');
-const easterEggButton = document.querySelector('#easter-egg');
-const easterTxt = document.querySelector('#easter-txt');
-
 const musicData = [
     {
         "title": "First Kiss and My Heart is 120BPM",
@@ -116,12 +95,3 @@ const musicData = [
         id: 12,
     },
 ];
-
-let dark = true;
-let first = true;
-let loop = false;
-let loopID = 0;
-let playing = false;
-let index = 0;
-let volume = 0;
-let easter = 0;

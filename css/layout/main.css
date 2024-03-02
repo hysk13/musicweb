@@ -8,18 +8,29 @@
 #website-wrap {
     width: 98%;
     height: 98%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     background: linear-gradient(#8a8a8a, #3f4340);
     border: 3px solid var(--main-color);
     border-radius: 20px;
 }
 
+#screen-right {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+}
+
 #main-web {
-    width: 70%;
+    width: 90%;
     height: 70%;
-    position: absolute;
-    right: 40px;
-    margin-top: 75px;
-    margin-bottom: 75px;
     overflow: hidden;
     overflow-x: auto;
     overflow-y: auto;
@@ -86,7 +97,14 @@
 @media screen and (max-width: 750px) {
     #main-web {
         width: 90%;
-        right: 5%;
-        margin: 50px 0;
+    }
+    #screen-right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #main-web {
+        margin-left: 5%;
     }
 }
