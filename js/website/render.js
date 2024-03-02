@@ -28,7 +28,8 @@ function CreateCard(id) {
     return [cardWrap, cardThumb, cardTextWrap, cardTitle, cardBy];
 }
 
-function RenderCatalog() {
+function RenderCatalog(data) {
+    data = data || musicData;
     let columns = [];
     allCatalog.innerHTML = '';
     for (let i = 0; i < 3; i++) {
