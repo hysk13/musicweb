@@ -23,12 +23,9 @@ ctrlBack.onclick = function() {
 
 ctrlPlay.onclick = function() {
     if (!first) {
-        alert(playing)
         if (playing == true) {
-            alert('hi')
             playing = false;
             player.pauseVideo();
-            alert('bye')
         } else {
             playing = true;
             player.playVideo();
