@@ -22,7 +22,7 @@ function LoadAudio(id) {
     if (musicData[index]['start'] != undefined) playerStart = musicData[index]['start'];
     if (musicData[index]['end'] != undefined) playerEnd = musicData[index]['end'];
     else playerEnd = player.getDuration();
-    LoadPlayer(id)
+    LoadPlayer(id);
 }
 
 function LoadPlayer(id) {
@@ -31,14 +31,17 @@ function LoadPlayer(id) {
     playerTitle.textContent = musicData[id]['title'];
     playerBy.textContent = musicData[id]['by'];
     playerBy.style.color = musicData[id]['by-color'];
+    player.seekTo(playerStart);
 }
 
 function PlayAudio() {
     playing = true;
     ctrlPlay.innerHTML = '<i class="fa fa-pause" />';
+    playerWrap.style.display = 'flex';
 }
 
 function PauseAudio() {
     playing = false;
     ctrlPlay.innerHTML = '<i class="fa fa-play" />';
+    playerWrap.style.display = 'none';
 }

@@ -24,7 +24,6 @@ function onYouTubeIframeAPIReady() {
         },
         events: {
             'onReady': function(e) {
-                e.target.seekTo(playerStart);
                 e.target.playVideo();
             },
             'onStateChange': function onPlayerStateChange(e) {
@@ -38,19 +37,15 @@ function onYouTubeIframeAPIReady() {
                     case 1:
                         ctrlPlay.innerHTML = '<i class="fa fa-pause" />';
                         playing = true;
-                        playerWrap.style.display = 'flex';
                         break;
                     case 2:
                         ctrlPlay.innerHTML = '<i class="fa fa-play" />';
                         playing = false;
-                        playerWrap.style.display = 'none';
                         break;
                 }
             },
         }
     });
-    const ifr = document.querySelector('#player');
-    
 }
 
 document.addEventListener('visibilitychange', function() {
