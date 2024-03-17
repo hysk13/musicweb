@@ -36,6 +36,7 @@ function onYouTubeIframeAPIReady() {
                         ctrlPlay.innerHTML = '<i class="fa fa-pause" />';
                         playing = true;
                         playerWrap.style.display = 'flex';
+                        if (player.getCurrentTime() < playerStart) player.seekTo(playerStart);
                         break;
                     case 2:
                         ctrlPlay.innerHTML = '<i class="fa fa-play" />';
