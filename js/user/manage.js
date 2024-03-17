@@ -7,8 +7,8 @@ let playing = false;
 let index = 0;
 let volume = 0;
 
-let playerStart = 0
-let playerEnd = 0
+let playerStart = 0;
+let playerEnd = 0;
 
 function LoadAudio(id) {
     index = id;

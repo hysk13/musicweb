@@ -7,7 +7,10 @@ const progress = document.querySelector('.progress');
 setInterval(() => {
     try {
         if (playing) progress.style.width = (player.getCurrentTime() / playerEnd-playerStart)*100+"%";
-        if (player.getCurrentTime() >= playerEnd) player.seekTo(player.getDuration());
+        if (player.getCurrentTime() >= playerEnd) {
+            player.seekTo(playerStart);
+            player.playVideo();
+        }
     } catch (err) {}
 }, 1000);
 
