@@ -14,8 +14,7 @@ function CreateCard(id) {
     }
     const cardThumb = document.createElement('img');
     cardThumb.className = 'cardThumb';
-    if (musicData[id]['thumb'] == undefined) cardThumb.src = `https://img.youtube.com/vi/${musicData[id]['file']}/0.jpg`;
-    else cardThumb.src = `https://img.youtube.com/vi/${musicData[id]['thumb']}/0.jpg`;
+    cardThumb.src = `https://img.youtube.com/vi/${musicData[id]['file']}/0.jpg`;
     const cardTextWrap = document.createElement('div');
     cardTextWrap.className = 'cardTextWrap';
     const cardTitle = document.createElement('p');

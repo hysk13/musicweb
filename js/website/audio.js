@@ -26,9 +26,6 @@ function onYouTubeIframeAPIReady() {
             },
             'onStateChange': function onPlayerStateChange(e) {
                 switch(e.data) {
-                    case -1:
-                        player.seekTo(playerStart)
-                        break
                     case 0:
                         if (loop) {
                             player.seekTo(playerStart);

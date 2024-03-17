@@ -63,6 +63,8 @@ const musicData = [
         "file": "m0o7fbNKhpM",
         "by-color": "lightblue",
         id: 8,
+        'start': 4,
+        'end': 244,
     },
     {
         "title": "Me Gustas Tu",
@@ -84,6 +86,8 @@ const musicData = [
         "file": "ZBhicyvlhcg",
         "by-color": "blue",
         id: 11,
+        'start': 3,
+        'end': 196,
     },
     {
         "title": "Cheer Up",

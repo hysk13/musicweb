@@ -22,11 +22,11 @@ function LoadAudio(id) {
     if (musicData[index]['start'] != undefined) playerStart = musicData[index]['start'];
     if (musicData[index]['end'] != undefined) playerEnd = musicData[index]['end'];
     else playerEnd = player.getDuration();
-    LoadPlayer(id, playerStart);
-    alert(playerStart)
+    player.seekTo(playerStart)
+    LoadPlayer(id);
 }
 
-function LoadPlayer(id, playerStart) {
+function LoadPlayer(id) {
     if (musicData[id]['thumb'] == undefined) playerThumb.src = `https://img.youtube.com/vi/${musicData[id]['file']}/0.jpg`;
     else playerThumb.src = `https://img.youtube.com/vi/${musicData[id]['thumb']}/0.jpg`;
     playerTitle.textContent = musicData[id]['title'];
