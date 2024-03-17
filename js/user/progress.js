@@ -5,13 +5,11 @@ const progress = document.querySelector('.progress');
 
 // Source: https://www.youtube.com/watch?v=goaDRak0_7Q
 setInterval(() => {
-    try {
-        if (playing) progress.style.width = (player.getCurrentTime() / playerEnd-playerStart)*100+"%";
-        if (player.getCurrentTime() >= playerEnd) {
-            player.seekTo(playerStart);
-            player.playVideo();
-        }
-    } catch (err) {}
+    if (playing) progress.style.width = (player.getCurrentTime() / playerEnd-playerStart)*100+"%";
+    if (player.getCurrentTime() >= playerEnd) {
+        player.seekTo(playerStart);
+        player.playVideo();
+    }
 }, 1000);
 
 progressBar.addEventListener('click', (e) => {
