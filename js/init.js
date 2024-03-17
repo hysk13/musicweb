@@ -101,7 +101,7 @@ const musicData = [
         "thumb": "USb5I2t_nEo",
         "by": "Zamgolbers",
         "file": "USb5I2t_nEo",
-        "by-color": "skyblue",
+        "by-color": "blue",
         id: 13,
         "start": 30,
         "end": 210,

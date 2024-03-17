@@ -17,10 +17,8 @@ function onYouTubeIframeAPIReady() {
             'playsinline': 1,
             'controls': 0,
             'disablekb': 1,
-            'rel' : 0,
-            'fs' : 0,
-            'start': 0,
-            'end': 1000,
+            'rel': 0,
+            'fs': 0,
         },
         events: {
             'onReady': function(e) {
@@ -28,19 +26,24 @@ function onYouTubeIframeAPIReady() {
             },
             'onStateChange': function onPlayerStateChange(e) {
                 switch(e.data) {
+                    case -1:
+                        player.seekTo(playerStart)
+                        break
                     case 0:
                         if (loop) {
-                            player.seekTo(0);
+                            player.seekTo(playerStart);
                             player.playVideo();
                         }
                         break;
                     case 1:
                         ctrlPlay.innerHTML = '<i class="fa fa-pause" />';
                         playing = true;
+                        playerWrap.style.display = 'flex';
                         break;
                     case 2:
                         ctrlPlay.innerHTML = '<i class="fa fa-play" />';
                         playing = false;
+                        playerWrap.style.display = 'none';
                         break;
                 }
             },
