@@ -5,7 +5,7 @@ const progress = document.querySelector('.progress');
 
 // Source: https://www.youtube.com/watch?v=goaDRak0_7Q
 setInterval(() => {
-    if (playing) progress.style.width = (player.getCurrentTime() / player.getDuration())*100+"%";
+    if (playing) progress.style.width = (player.getCurrentTime() / playerEnd-playerStart)*100+"%";
 }, 1000);
 
 progressBar.addEventListener('click', (e) => {

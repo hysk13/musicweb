@@ -23,7 +23,7 @@
     text-decoration: none;
 }
 
-::-webkit-scrollbar, iframe {
+::-webkit-scrollbar {
     display: none;
 }
 

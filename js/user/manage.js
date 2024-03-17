@@ -7,6 +7,9 @@ let playing = false;
 let index = 0;
 let volume = 0;
 
+let playerStart = 0
+let playerEnd = 0
+
 function LoadAudio(id) {
     index = id;
     playing = true;
@@ -16,6 +19,9 @@ function LoadAudio(id) {
     };
     if (first) first = false;
     player.loadVideoById(musicData[index]['file']);
+    if (musicData[index]['start'] != undefined) playerStart = musicData[index]['start'];
+    if (musicData[index]['end'] != undefined) playerEnd = musicData[index]['end'];
+    else playerEnd = player.getDuration();
     LoadPlayer(id)
 }
 

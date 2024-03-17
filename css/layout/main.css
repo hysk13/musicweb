@@ -54,35 +54,23 @@
     border-radius: 20px;
 }
 
-/* Main Catalog */
+#player-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-div-color);
+    border: 3px solid var(--main-border-color);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
 
-    /* Search Thing */
-    #search-wrap {
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #search-wrap input {
-        width: 80%;
-        height: 20px;
-    }
-
-    #search-wrap button {
-        width: 40px;
-        height: 40px;
-        background: transparent;
-        border: none;
-        font-family: Verdana, sans-serif;
-        color: var(--main-color);
-    }
-
-    #search-wrap button i {
-        margin: 0;
-    }
-
+#player {
+    display: block;
+    width: 540px;
+    height: 300px;
+}
 
 #mainweb-catalogs {
     display: flex;

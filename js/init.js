@@ -95,5 +95,15 @@ const musicData = [
         "file": "1Kg4yomNEgs",
         "by-color": "pink",
         id: 12,
+    },
+    {
+        "title": "Time of Our Life (Zamgolbers Cover)",
+        "thumb": "USb5I2t_nEo",
+        "by": "Zamgolbers",
+        "file": "USb5I2t_nEo",
+        "by-color": "aliceblue",
+        id: 13,
+        "start": 30,
+        "end": 210,
     }
 ];
