@@ -19,11 +19,13 @@ function LoadAudio(id) {
     };
     if (first) first = false;
     player.loadVideoById(musicData[index]['file']);
-    try { playerStart = musicData[index]['start']; }
-    catch (err) { playerStart = 0; }
-    if (musicData[index]['end'] != undefined) playerEnd = musicData[index]['end'];
-    else playerEnd = player.getDuration();
-    player.seekTo(playerStart)
+    setTimeout(() => {
+        if (musicData[index]['start'] != undefined) playerStart = musicData[index]['start'];
+        else playerStart = 0;
+        if (musicData[index]['end'] != undefined) playerEnd = musicData[index]['end'];
+        else playerEnd = player.getDuration();
+        player.seekTo(playerStart);
+    }, 2000)
     LoadPlayer(id);
 }
 
