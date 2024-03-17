@@ -16,6 +16,6 @@ progressBar.addEventListener('click', (e) => {
     const progressBarRect = progressBar.getBoundingClientRect();
     const clickX = e.clientX - progressBarRect.left;
     const progressBarWidth = progressBarRect.width;
-    const seekTime = (clickX / progressBarWidth) * player.getDuration();
+    const seekTime = (clickX / progressBarWidth) * playerEnd;
     player.seekTo(seekTime);
 });
