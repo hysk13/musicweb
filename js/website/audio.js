@@ -24,6 +24,7 @@ function onYouTubeIframeAPIReady() {
         },
         events: {
             'onReady': function(e) {
+                e.target.seekTo(playerStart);
                 e.target.playVideo();
             },
             'onStateChange': function onPlayerStateChange(e) {
