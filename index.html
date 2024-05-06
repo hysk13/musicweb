@@ -3,13 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/card.css">
+    <link id="theme-select" rel="stylesheet" href="./styles/themes/dark.css">
     <title>My Music Playlist</title>
-    <style>
-        html, body { width: 100%; height: 100%; overflow: hidden; margin: 0;}
-        iframe { width: 100%; height: 100%;}
-    </style>
 </head>
 <body>
-    <iframe src="./app.html" frameborder="0"></iframe>
+    
+    <nav class="nav-bar">
+        <div class="nav-routes">
+            <h1 class="nav-web-title">
+                <i class="fa fa-music"></i>
+                My Music Web
+                <i class="fa fa-music"></i>
+            </h1>
+        </div>  
+        <div class="nav-history">
+            <h2 class="nav-history-head">
+                <i class="fa fa-clock-o"></i>
+                Your Listening History
+            </h2>
+            <div class="nav-history-list"></div>
+        </div>
+        <div class="nav-web-set">
+            <button tabindex="-1" id="theme-change">
+                <i class="fa fa-sun-o"></i>
+            </button>
+            <div>
+                <i class="fa fa-volume-up"></i>
+                <input id="volume-slider" type="range" min="0" max="100" value="100">
+            </div>
+        </div>
+        <div class="nav-web-info">
+            <a href="" tabindex="-1">
+                <i class="fa fa-code"></i>
+                Source Code
+            </a>
+            <a href="https://github.com/hysk13" target="_blank" tabindex="-1">
+                <i class="fa fa-user-circle"></i>
+                hysk13
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="main-page">
+            <div class="page-wrap">
+                <div id="player"></div>
+                <div class="index-song-carousel">
+                    <!-- Content will be dynamically created -->
+                </div>
+                <div class="index-ad">
+                    <h2>Make this website your own!</h2>
+                    <a href="./scripts/source.js" target="_blank" tabindex="-1">Edit <code>source.js</code> to get started.</a>
+                </div>
+            </div>
+        </section>
+        <section class="track-control">
+            <div class="track-hitbox">
+                <div class="track-info">
+                    <img id="track-info-img" src="./blank.png" alt="">
+                    <div class="track-info-text">
+                        <p id="track-info-title">{Song Title}</p>
+                        <p id="track-info-by">{Song By}</p>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <div class="track-control-btns">
+                        <button tabindex="-1" id="ctrl-back">
+                            <i class="fa fa-backward"></i>
+                        </button>
+                        <button tabindex="-1" id="ctrl-play">
+                            <i class="fa fa-play"></i>
+                        </button>
+                        <button tabindex="-1" id="ctrl-loop">
+                            <i class="fa fa-refresh"></i>
+                        </button>
+                        <button tabindex="-1" id="ctrl-next">
+                            <i class="fa fa-forward"></i>
+                        </button>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <iframe src="./null.html" frameborder="0"></iframe>
+
+    <script src="./scripts/source.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/render.js"></script>
+    <script src="./scripts/function.js"></script>
+
 </body>
 </html>

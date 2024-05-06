@@ -1,0 +1,10 @@
+:root {
+    --default-background: white;
+    --background-color-one: #efefef;
+    --background-color-two: #dddddd;
+    --background-color-three: #cccccc;
+    --main-text-color: #000000;
+    --secondary-text-color: #121212;
+    --progress-color: #000000;
+    --layout-border: #000000;
+}   

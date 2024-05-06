@@ -1,0 +1,10 @@
+:root {
+    --default-background: black;
+    --background-color-one: #121212;
+    --background-color-two: #252525;
+    --background-color-three: #323232;
+    --main-text-color: #fff;
+    --secondary-text-color: #a7a7a7;
+    --progress-color: #fff;
+    --layout-border: #fff;
+}

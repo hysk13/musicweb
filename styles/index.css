@@ -1,0 +1,209 @@
+.main-page {
+    height: var(--page-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    margin-bottom: 0px;
+    background-color: var(--background-color-two);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.page-wrap {
+    width: 98%;
+    height: 98%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#player {
+    display: none;
+    pointer-events: none;
+}
+
+.track-hitbox {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.track-control {
+    height: 150px;
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--background-color-two);
+    border-radius: 20px;
+}
+
+.track-info {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.track-info-text {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 40px;
+}
+
+.track-info-text p {
+    height: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+#track-info-title {
+    margin-bottom: 5px;
+    color: var(--main-text-color);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#track-info-by {
+    color: var(--secondary-text-color);
+    font-size: 13px;
+}
+
+.track-controls {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-control-btns {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 50px;
+}
+
+.track-control-btns button {
+    background: none;
+    border: none;
+}
+
+#ctrl-loop {
+    color: #fff;
+}
+
+#ctrl-loop i {
+    color: inherit;
+}
+
+.track-control-btns button i {
+    color: var(--main-text-color);
+    font-size: 30px;
+}
+
+/* https://www.youtube.com/watch?v=goaDRak0_7Q */
+.progress-bar {
+    width: 100%;
+    height: 7px;
+    background-color: rgba(142, 142, 142, 0.589);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: var(--progress-color);
+    border-radius: 10px;
+}
+
+.index-song-carousel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.index-songs {
+    margin: 20px 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: var(--background-color-one);
+    text-align: center;
+}
+
+.index-ad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 70px;
+    padding: 10px;
+    border: 3px solid var(--layout-border);
+    border-radius: 20px;
+    color: var(--main-text-color);
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+}
+
+.index-ad a {
+    margin-left: 50px;
+    padding: 10px;
+    border: 2px solid var(--layout-border);
+    border-radius: 10px;
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.index-ad a:hover {
+    background-color: var(--background-color-three);
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .track-info {
+        display: none;
+    }
+    .main-page {
+        width: 90%;
+        margin: 0;
+    }
+    .track-control {
+        width: 90%;
+        margin: 0;
+    }
+    .track-controls {
+        width: 100%;
+    }
+    .track-control-btns {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .index-ad {
+        display: none;
+    }
+}
