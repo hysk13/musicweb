@@ -20,6 +20,31 @@ const ctrlNext = document.querySelector('#ctrl-next');
 const progressBar = document.querySelector('.progress-bar');
 const progress = document.querySelector('.progress');
 
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('player', {
+    height: '390',
+    width: '640',
+    videoId: 'M7lc1UVf-VE',
+    playerVars: {
+      'playsinline': 1
+    },
+  });
+}
+
+function onPlayerStateChange(e) {
+    switch (e.data) {
+        case 0:
+            if (audioLoop) {
+                player.seekTo(beginTime);
+                player.playVideo();
+            } else {
+                audioPlaying = false;
+            }
+        case 1:
+            audioPlaying = true;
+    }
+}
+
 ctrlBack.addEventListener('click', () => {
     const skipTo = player.getCurrentTime() - 5;
     player.seekTo(skipTo > beginTime ? skipTo : beginTime);
@@ -42,6 +67,7 @@ ctrlNext.addEventListener('click', () => {
 });
 
 function loadTrack(trackId) {
+    audioPlaying = true;
     history.push(trackId);
     if (history.length > 5) history.shift();
     renderHistory();
@@ -63,6 +89,7 @@ function updateProgressBar() {
         if (audioPlaying) {
             const currentTime = player.getCurrentTime();
             progress.style.width = (((currentTime - beginTime) / (endTime || player.getDuration())) * 100) + '%';
+            console.log(progress.style.width)
             if (currentTime >= (endTime || player.getDuration())) {
                 if (audioLoop) {
                     player.seekTo(beginTime);
@@ -72,7 +99,7 @@ function updateProgressBar() {
                 }
             }
         }
-    } catch (err) {}
+    } catch (err) { }
 }
 
 setInterval(updateProgressBar, 1000);
