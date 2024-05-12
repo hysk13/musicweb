@@ -19,6 +19,7 @@ const ctrlLoop = document.querySelector('#ctrl-loop');
 const ctrlNext = document.querySelector('#ctrl-next');
 const progressBar = document.querySelector('.progress-bar');
 const progress = document.querySelector('.progress');
+const favicon = document.querySelector('#favicon');
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
@@ -72,6 +73,8 @@ function loadTrack(trackId) {
     if (history.length > 5) history.shift();
     renderHistory();
     const song = songs[trackId];
+    document.title = `Playing ${song.title}...`;
+    favicon.href = `https://img.youtube.com/vi/${song.file}/0.jpg`;
     beginTime = song.time[0];
     endTime = song.time[1];
     player.loadVideoById(song.file);
