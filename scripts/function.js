@@ -41,8 +41,13 @@ function onPlayerStateChange(e) {
             } else {
                 audioPlaying = false;
             }
+            break;
         case 1:
             audioPlaying = true;
+            break;
+        case 3:
+            audioPlaying = true;
+            break;
     }
 }
 
